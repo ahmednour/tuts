@@ -1,13 +1,66 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Cairo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  min-height: 100svh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+}
+.form form {
+  max-width: 40%;
+  width: 500px;
+  border: 2px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px #ddd;
+}
+.form form label {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.form form input {
+  margin-bottom: 10px;
+  height: 50px;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.form form button {
+  background-color: cadetblue;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid transparent;
+}
+.form form button:hover {
+  color: darkcyan;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid darkcyan;
+}
+.form form p.error-message {
+  color: red;
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
 }
